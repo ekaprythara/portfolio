@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
 import { Spin as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
@@ -20,6 +19,7 @@ const Navbar = () => {
         <button className="block lg:hidden">
           <Hamburger toggled={isOpen} toggle={setIsOpen} size={27} />
         </button>
+        {/* ul for large screen size */}
         <ul className="hidden lg:flex lg:flex-row lg:gap-5">
           <li>
             <a href="#home">Home</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        {/* for smaller screen size */}
+        {/* ul for small screen size */}
         {isOpen && (
           <div className="absolute left-0 right-0 top-16 bg-[#333] z-50">
             <ul className="flex flex-col justify-center items-center py-5 gap-5">
