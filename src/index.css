@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Pochaevsk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-garamond: "Pochaevsk", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #131313;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+::selection {
+  background-color: #facc14;
+  color: #000000;
+}
+
+::-webkit-selection {
+  background-color: #facc14;
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #facc14;
+  color: #000000;
+}
