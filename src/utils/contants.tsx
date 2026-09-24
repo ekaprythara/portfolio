@@ -1,6 +1,21 @@
 import bpbdImg from "../assets/projects/bpbd.png";
 import bersihJejak from "../assets/projects/bersih-jejak.jpeg";
 
+export const NAV_LINKS = [
+    {
+        label: "Work",
+        href: "#work",
+    },
+    {
+        label: "Experience",
+        href: "#experience",
+    },
+    {
+        label: "About",
+        href: "#profile",
+    },
+];
+
 export const SOCIALS = [
     {
         label: "LinkedIn",
@@ -37,7 +52,6 @@ export const SELECTED_WORKS = [
         techStacks: ["Vue", "Laravel", "Inertia", "MySQL"],
         sourceUrl: "https://github.com/ekaprythara/arfapos",
         demoUrl: "#",
-        // Gambar merepresentasikan sistem kasir / POS / retail / e-commerce
         image: bersihJejak,
         role: "Full Stack Developer",
         situation:

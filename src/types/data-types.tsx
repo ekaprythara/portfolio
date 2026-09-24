@@ -3,8 +3,10 @@ export type MainLayoutProps = {
 };
 
 export type ButtonProps = {
+    className?: string;
     children: React.ReactNode;
     variant?: "primary" | "outline";
+    onClick?: () => void;
 };
 
 export type LinkProps = {

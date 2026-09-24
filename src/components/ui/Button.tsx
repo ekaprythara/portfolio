@@ -1,6 +1,11 @@
 import type { ButtonProps } from "../../types/data-types";
 
-const Button = ({ variant = "primary", children }: ButtonProps) => {
+const Button = ({
+    variant = "primary",
+    children,
+    className,
+    onClick,
+}: ButtonProps) => {
     const baseStyle = "py-3 px-8 text-sm text-sm";
 
     const variantStyle: Record<"primary" | "outline", string> = {
@@ -11,7 +16,8 @@ const Button = ({ variant = "primary", children }: ButtonProps) => {
     return (
         <button
             type="button"
-            className={`${baseStyle} ${variantStyle[variant]}`}
+            className={`${baseStyle} ${variantStyle[variant]} ${className}`}
+            onClick={onClick}
         >
             {children}
         </button>

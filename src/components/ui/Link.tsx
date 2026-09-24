@@ -1,3 +1,4 @@
+import type { AnchorHTMLAttributes } from "react";
 import type { LinkProps } from "../../types/data-types";
 
 const Link = ({
@@ -6,7 +7,8 @@ const Link = ({
     href,
     className = "",
     children,
-}: LinkProps) => {
+    ...rest
+}: LinkProps & AnchorHTMLAttributes<HTMLAnchorElement>) => {
     const styleByType: Record<"link" | "button", string> = {
         link: "text-neutral-300 hover:text-[#FACC14] transition-colors duration-200 inline-flex items-center gap-1.5",
         button: "py-3 px-8 inline-flex items-center justify-center font-medium transition-all duration-200 hover:text-[#FACC14] transition-colors duration-200",
@@ -26,12 +28,7 @@ const Link = ({
             : styleByType["link"];
 
     return (
-        <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${combinedStyles} ${className}`}
-        >
+        <a href={href} className={`${combinedStyles} ${className}`} {...rest}>
             {children}
         </a>
     );

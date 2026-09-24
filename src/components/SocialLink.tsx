@@ -9,6 +9,8 @@ const SocialLink = () => {
                     href={social.href}
                     key={social.label}
                     className="text-neutral-400"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     {social.label}
                 </Link>
