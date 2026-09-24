@@ -34,13 +34,14 @@ const Profile = () => {
                 </div>
 
                 <div className="col-span-5 flex flex-col justify-center gap-8">
-                    <p className="text-xl tracking-wide text-neutral-400">
+                    <p className="text-lg tracking-wide text-neutral-400">
                         Whether you're exploring an idea, improving an existing
                         product, or simply want to connect, I'd love to hear
                         from you.
                     </p>
                     <div className="flex gap-5">
                         <Link
+                            type="button"
                             href="mailto:ekapriyanthara@gmail.com"
                             className="flex items-center gap-2"
                         >
@@ -49,6 +50,7 @@ const Profile = () => {
                         </Link>
 
                         <Link
+                            type="button"
                             variant="outline"
                             href="https://wa.me/6285175007778?text=Hi%20Eka%2C%20I%20found%20your%20portfolio%20and%20would%20love%20to%20connect."
                             className="flex items-center gap-2"
@@ -58,6 +60,7 @@ const Profile = () => {
                         </Link>
 
                         <Link
+                            type="button"
                             variant="outline"
                             href="#"
                             className="flex items-center gap-2"

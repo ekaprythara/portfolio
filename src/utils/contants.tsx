@@ -1,3 +1,6 @@
+import bpbdImg from "../assets/projects/bpbd.png";
+import bersihJejak from "../assets/projects/bersih-jejak.jpeg";
+
 export const SOCIALS = [
     {
         label: "LinkedIn",
@@ -20,9 +23,8 @@ export const SELECTED_WORKS = [
         sourceUrl: "https://github.com/ekaprythara/e-report",
         demoUrl: "http://ekapriyanthara-bpbd.infinityfree.me/",
         // Gambar merepresentasikan dashboard / report / analytics
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        image: bpbdImg,
         role: "Full Stack Developer",
-        year: "2022",
         situation:
             "Badan Penanggulangan Bencana Daerah (BPBD) memerlukan sistem digitalisasi pencatatan dan pelaporan distribusi logistik bantuan bencana agar transparansi dan kecepatan rekapitulasi data dapat ditingkatkan.",
         challenges:
@@ -31,14 +33,13 @@ export const SELECTED_WORKS = [
             "Aplikasi e-report logistik berhasil di-deploy dan digunakan secara operasional, memangkas waktu pembuatan laporan bulanan hingga 60%, serta meminimalisir kesalahan rekapitulasi data bantuan logistik.",
     },
     {
-        title: "ArfaPOS - Modern Point of Sale",
-        techStacks: ["SvelteKit", "Tailwind CSS", "TypeScript", "PostgreSQL"],
+        title: "Bersih Jejak",
+        techStacks: ["Vue", "Laravel", "Inertia", "MySQL"],
         sourceUrl: "https://github.com/ekaprythara/arfapos",
-        demoUrl: "https://arfapos.example.com",
+        demoUrl: "#",
         // Gambar merepresentasikan sistem kasir / POS / retail / e-commerce
-        image: "https://picsum.photos/seed/pos/800/600",
+        image: bersihJejak,
         role: "Full Stack Developer",
-        year: "2026",
         situation:
             "Saya membangun ArfaPOS sebagai proyek sampingan personal untuk mengeksplorasi teknologi baru, memperkuat portofolio, dan memvalidasi ide produk point-of-sale yang ringan dan cepat.",
         challenges:
@@ -54,12 +55,66 @@ export const SELECTED_WORKS = [
         // Gambar merepresentasikan teknologi / web interface / code / saas dashboard
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
         role: "Lead Backend Developer",
-        year: "2024",
         situation:
             "Layanan administrasi kependudukan di tingkat desa sering kali mengalami antrean panjang dan kesulitan dalam pengelolaan surat-menyurat warga secara transparan.",
         challenges:
             "Mengembangkan arsitektur RESTful API yang aman dan terstruktur untuk menangani pengajuan dokumen warga secara online, validasi tanda tangan digital, serta manajemen hak akses perangkat desa.",
         outcome:
             "Platform berhasil memproses ratusan permohonan surat pengantar secara mandiri oleh warga, meningkatkan efisiensi pelayanan administrasi kantor desa secara signifikan.",
+    },
+];
+
+export const EXPERIENCES = [
+    {
+        company: "Krisna Oleh-Oleh Bali Bypass",
+        role: "Packing Staff",
+        location: "Badung, Bali",
+        startDate: "Feb 2025",
+        endDate: "Aug 2026",
+        responsibilities: [
+            "Handled and checked customer's items before packing.",
+            "Managed orders for packing supplies such as boxes, bubble wrap, brown paper, and tubes.",
+            "Assisted with daily sales reports and handed them over to the finance department.",
+        ],
+        reflection:
+            "Built strong discipline in quality control, inventory management, and cross-departmental reporting under fast-paced retail operations.",
+    },
+    {
+        company: "PT. Putra Inti Lumayan",
+        role: "Monument Attendant",
+        location: "Badung, Bali",
+        startDate: "Sep 2023",
+        endDate: "May 2024",
+        responsibilities: [
+            "Looked out for the monument by guiding visitors to prevent any accidental damage.",
+            "Prepared payment receipts for visitor transactions.",
+            "Documented pre-wedding shoots for promotional use.",
+        ],
+        reflection:
+            "Enhanced my communication skills, situational awareness, and ability to handle customer-facing duties professionally.",
+    },
+    {
+        company: "PT. Putra Inti Lumayan",
+        role: "Admin Support",
+        location: "Denpasar, Bali",
+        startDate: "Dec 2022",
+        endDate: "May 2024",
+        responsibilities: [
+            "Handled document copying for admin needs and organized files by priority for easier access.",
+        ],
+        reflection:
+            "Taught me the importance of meticulous organization, structural filing, and streamlined administrative workflows.",
+    },
+    {
+        company: "BPBD Provinsi Bali",
+        role: "Data Entry (Internship)",
+        location: "Denpasar, Bali",
+        startDate: "Jul 2021",
+        endDate: "Sep 2021",
+        responsibilities: [
+            "Helped out with inventory, sorted out reports for incoming/outgoing logistics, and handled basic data entry.",
+        ],
+        reflection:
+            "An early introduction to data management and operational coordination during high-urgency public service scenarios.",
     },
 ];

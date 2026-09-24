@@ -1,15 +1,16 @@
 export type MainLayoutProps = {
-  children: React.ReactNode;
+    children: React.ReactNode;
 };
 
 export type ButtonProps = {
-  children: React.ReactNode;
-  variant?: "primary" | "outline";
+    children: React.ReactNode;
+    variant?: "primary" | "outline";
 };
 
 export type LinkProps = {
-  children: React.ReactNode;
-  variant?: "primary" | "outline";
-  href: string;
-  className?: string;
+    children: React.ReactNode;
+    type?: "link" | "button";
+    variant?: "primary" | "outline" | "ghost";
+    href: string;
+    className?: string;
 };

@@ -1,6 +1,7 @@
 import { BsArrowRightShort } from "react-icons/bs";
 import { SELECTED_WORKS } from "../utils/contants";
 import Separator from "./Separator";
+import Link from "./ui/Link";
 
 const SelectedWork = () => {
     return (
@@ -13,11 +14,11 @@ const SelectedWork = () => {
                     Selected Works
                 </h1>
                 <p className="text-xl text-neutral-400 max-w-2xl tracking-wide">
-                    Projects that challenged how I think, collaborate, and
-                    build. More case studies coming as I document past work.
+                    A collection of self-driven projects and independent
+                    explorations where I test new technologies, solve practical
+                    problems, and sharpen my full-stack development skills.
                 </p>
             </div>
-
             <div className="mt-10">
                 {SELECTED_WORKS.map((work, index) => (
                     <div key={work.title} className="flex flex-col">
@@ -30,7 +31,7 @@ const SelectedWork = () => {
                                         {work.title}
                                     </h2>
                                     <span className="text-base text-[#FACC14]">
-                                        {`${work.role} • ${work.year}`}
+                                        {work.role}
                                     </span>
                                 </div>
 
@@ -39,7 +40,7 @@ const SelectedWork = () => {
                                     {work.techStacks.map((tech, techIndex) => (
                                         <div
                                             key={techIndex}
-                                            className="py-1 px-2.5 bg-neutral-800 tracking-wider text-center text-xs border border-neutral-700 text-neutral-300 rounded-full w-fit"
+                                            className="py-1 px-2.5 bg-neutral-800/70 tracking-wider text-center text-xs border border-neutral-700 text-neutral-300 w-fit"
                                         >
                                             {tech}
                                         </div>
@@ -49,37 +50,35 @@ const SelectedWork = () => {
                                 {/* Action Links */}
                                 <div className="flex items-center gap-8 pt-2">
                                     {work.demoUrl !== "#" && (
-                                        <a
+                                        <Link
+                                            variant="ghost"
                                             href={work.demoUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex flex-row gap-1.5 items-center text-base"
+                                            className="flex gap-2"
                                         >
                                             View Live Demo
-                                            <BsArrowRightShort size={22} />
-                                        </a>
+                                            <BsArrowRightShort size={25} />
+                                        </Link>
                                     )}
                                     {work.sourceUrl !== "#" && (
-                                        <a
+                                        <Link
+                                            variant="ghost"
                                             href={work.sourceUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex flex-row gap-1.5 items-center text-base"
+                                            className="flex gap-2"
                                         >
                                             Source
-                                            <BsArrowRightShort size={22} />
-                                        </a>
+                                            <BsArrowRightShort size={25} />
+                                        </Link>
                                     )}
                                 </div>
                             </div>
 
                             {/* Kanan */}
                             <div className="col-span-8 flex flex-col gap-10">
-                                <div className="overflow-hidden rounded-lg">
+                                <div className="overflow-hidden aspect-video w-full">
                                     <img
                                         src={work.image}
                                         alt={`Image of ${work.title}`}
-                                        className="object-cover aspect-video transition-transform duration-500 ease-in-out hover:scale-105 w-full h-full"
+                                        className="object-cover w-full h-full transition-transform duration-500 ease-in-out hover:scale-105"
                                     />
                                 </div>
 
@@ -122,6 +121,17 @@ const SelectedWork = () => {
                         )}
                     </div>
                 ))}
+            </div>
+
+            <div className="mt-[8dvh] flex items-center justify-center">
+                <Link
+                    href="#"
+                    type="button"
+                    variant="outline"
+                    className="flex gap-2"
+                >
+                    View All Projects <BsArrowRightShort size={25} />
+                </Link>
             </div>
         </div>
     );

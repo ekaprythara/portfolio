@@ -8,6 +8,7 @@ import { DotGrid } from "interactive-dot-grid";
 import AnimatedCursor from "react-animated-cursor";
 import SelectedWork from "./components/SelectedWork";
 import Separator from "./components/Separator";
+import Experience from "./components/Experience";
 
 export function Background() {
     useEffect(() => {
@@ -60,6 +61,8 @@ const App = () => {
                     <Home />
                     <Separator />
                     <SelectedWork />
+                    <Separator />
+                    <Experience />
                     <Separator />
                     <Profile />
                 </MainLayout>
