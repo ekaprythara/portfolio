@@ -1,6 +1,7 @@
 import { BsEnvelope, BsFileEarmarkText, BsWhatsapp } from "react-icons/bs";
 import Link from "./ui/Link";
 import SocialLink from "./SocialLink";
+import profileImg from "../assets/profile/profile.jpg";
 
 const Profile = () => {
     return (
@@ -19,7 +20,7 @@ const Profile = () => {
                 {/* Bagian Kiri (Foto & Identitas) */}
                 <div className="flex flex-col gap-6 lg:col-span-3 w-full items-center lg:items-start">
                     <img
-                        src="https://ekapriyanthara.vercel.app/assets/profile-DiUHuhFe.jpg"
+                        src={profileImg}
                         alt="Eka Priyanthara"
                         height={200}
                         width={200}
