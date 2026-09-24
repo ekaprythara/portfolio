@@ -34,6 +34,11 @@ const Header = () => {
                         variant="outline"
                         className="md:hidden"
                         onClick={() => setIsOpen((prev) => !prev)}
+                        aria-label={
+                            isOpen
+                                ? "Close navigation menu"
+                                : "Open navigation menu"
+                        }
                     >
                         <BsList size={20} />
                     </Button>
