@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { DotGrid } from "interactive-dot-grid";
 import AnimatedCursor from "react-animated-cursor";
 import SelectedWork from "./components/SelectedWork";
+import Separator from "./components/Separator";
 
 export function Background() {
     useEffect(() => {
@@ -50,15 +51,16 @@ const App = () => {
                     "button",
                     ".link",
                 ]}
+                showSystemCursor
             />
             <Background />
             <div className="relative z-50">
                 <Header />
                 <MainLayout>
                     <Home />
-                    <hr className="text-neutral-900" />
+                    <Separator />
                     <SelectedWork />
-                    <hr className="text-neutral-900" />
+                    <Separator />
                     <Profile />
                 </MainLayout>
                 <Footer />

@@ -4,8 +4,11 @@ import SocialLink from "./SocialLink";
 
 const Profile = () => {
     return (
-        <div className="flex flex-col gap-8 py-24">
-            <h1 className="text-6xl text-white font-garamond max-w-4xl">
+        <div className="flex flex-col gap-8 pb-[15dvh]">
+            <h1
+                id="profile"
+                className="text-6xl text-white font-garamond max-w-4xl pt-[15dvh]"
+            >
                 Let's build something
                 <br />
                 meaningful together.
