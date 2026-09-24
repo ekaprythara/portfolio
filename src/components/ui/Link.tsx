@@ -5,13 +5,13 @@ const Link = ({
     variant = "primary",
     type = "link",
     href,
-    className = "",
+    className,
     children,
     ...rest
 }: LinkProps & AnchorHTMLAttributes<HTMLAnchorElement>) => {
     const styleByType: Record<"link" | "button", string> = {
-        link: "text-neutral-300 hover:text-[#FACC14] transition-colors duration-200 inline-flex items-center gap-1.5",
-        button: "py-3 px-8 inline-flex items-center justify-center font-medium transition-all duration-200 hover:text-[#FACC14] transition-colors duration-200",
+        link: "text-neutral-300 hover:text-[#FACC14] transition-colors duration-200 items-center gap-1.5",
+        button: "py-3 px-8 items-center justify-center font-medium transition-all duration-200 hover:text-[#FACC14] transition-colors duration-200",
     };
 
     const variantStyle: Record<"primary" | "outline" | "ghost", string> = {

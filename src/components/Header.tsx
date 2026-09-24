@@ -14,7 +14,7 @@ const Header = () => {
                     <h1 className="font-garamond text-4xl">
                         <a href="#home">EP</a>
                     </h1>
-                    <nav className="text-sm tracking-widest text-neutral-400 hidden lg:block">
+                    <nav className="text-sm tracking-widest text-neutral-400 hidden md:block">
                         <ul className="flex gap-8">
                             {NAV_LINKS.map((link) => (
                                 <li key={link.label}>
@@ -25,14 +25,14 @@ const Header = () => {
                     </nav>
                     <Link
                         href="#profile"
+                        className="hidden md:block"
                         type="button"
-                        className="hidden lg:block"
                     >
                         Let's Talk
                     </Link>
                     <Button
                         variant="outline"
-                        className="lg:hidden"
+                        className="md:hidden"
                         onClick={() => setIsOpen((prev) => !prev)}
                     >
                         <BsList size={20} />
