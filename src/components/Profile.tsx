@@ -74,7 +74,7 @@ const Profile = () => {
                         <Link
                             type="button"
                             variant="outline"
-                            href="#"
+                            href="/cv/CV_I Putu Eka Priyanthara.pdf"
                             className="flex items-center justify-center gap-2 w-full sm:w-auto"
                             target="_blank"
                             rel="noopener noreferrer"

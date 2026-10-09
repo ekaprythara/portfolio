@@ -1,5 +1,6 @@
 import bpbdImg from "../assets/projects/bpbd.png";
 import bersihJejak from "../assets/projects/bersih-jejak.jpeg";
+import evogym from "../assets/projects/evogym.jpeg";
 
 export const NAV_LINKS = [
     {
@@ -45,36 +46,35 @@ export const SELECTED_WORKS = [
         challenges:
             "Mengubah proses pencatatan manual berbasis kertas menjadi sistem digital terpusat yang mudah digunakan oleh petugas lapangan dengan literasi digital yang beragam, serta menangani sinkronisasi stok barang secara real-time.",
         outcome:
-            "Aplikasi e-report logistik berhasil di-deploy dan digunakan secara operasional, memangkas waktu pembuatan laporan bulanan hingga 60%, serta meminimalisir kesalahan rekapitulasi data bantuan logistik.",
+            "Sistem berhasil diselesaikan dan diuji coba dengan baik, menghadirkan solusi digitalisasi pencatatan logistik yang terpusat. Aplikasi ini secara efektif mampu mengotomatisasi manajemen stok barang dan menyajikan format pelaporan yang jauh lebih akurat dan transparan.",
+    },
+    {
+        title: "EVOGYM",
+        techStacks: ["React.js", "TailwindCSS", "TypeScript"], // Tambahkan TypeScript jika Anda menggunakannya
+        sourceUrl: "https://github.com/ekaprythara/evogym",
+        demoUrl: "https://evogym-zeta.vercel.app/",
+        image: evogym, // Pastikan variabel import gambar sudah benar
+        role: "Frontend Developer",
+        situation:
+            "Saya merancang landing page untuk EVOGYM, sebuah brand pusat kebugaran modern, dengan tujuan menciptakan presensi digital yang kuat untuk menampilkan fasilitas, program kelas, dan menarik minat calon anggota baru melalui antarmuka yang profesional.",
+        challenges:
+            "Mengimplementasikan desain Single Page Application (SPA) yang interaktif dengan navigasi smooth-scrolling, memastikan tata letak 100% responsif (mobile-first) menggunakan Tailwind CSS, serta menyusun struktur komponen React yang reusable agar kode mudah di-maintain.",
+        outcome:
+            "Landing page berhasil di-deploy di Vercel dengan performa tinggi dan waktu muat (load time) yang cepat. Menghasilkan antarmuka pengguna yang mulus dan visual yang menarik, siap digunakan sebagai media promosi digital yang efektif.",
     },
     {
         title: "Bersih Jejak",
-        techStacks: ["Vue", "Laravel", "Inertia", "MySQL"],
-        sourceUrl: "https://github.com/ekaprythara/arfapos",
+        techStacks: ["Vue", "Laravel", "Inertia", "MySQL", "Typescript"],
+        sourceUrl: "https://github.com/ekaprythara/arfapos", // Sesuaikan jika URL repository berubah
         demoUrl: "#",
         image: bersihJejak,
         role: "Full Stack Developer",
         situation:
-            "Saya membangun ArfaPOS sebagai proyek sampingan personal untuk mengeksplorasi teknologi baru, memperkuat portofolio, dan memvalidasi ide produk point-of-sale yang ringan dan cepat.",
+            "Saya mengembangkan Bersih Jejak, sebuah aplikasi point-of-sale (POS) dan manajemen jasa cuci sepatu, sebagai proyek personal. Tujuannya adalah merancang sistem terpadu untuk memudahkan manajemen pesanan, pelacakan status cucian pelanggan, dan pencatatan transaksi.",
         challenges:
-            "Merancang alur transaksi POS yang realistis dan responsif sambil menjaga kode tetap bersih dan konsisten dengan memanfaatkan alur kerja berbasis AI melalui OpenCode untuk akselerasi pengembangan.",
+            "Merancang arsitektur database yang fleksibel untuk berbagai jenis layanan, serta mengimplementasikan komponen antarmuka yang interaktif seperti timeline pelacakan status pesanan dan fitur cetak struk PDF yang mulus menggunakan Vue 3 dan Inertia.js.",
         outcome:
-            "ArfaPOS berhasil dideploy sebagai aplikasi fungsional yang siap pakai, membuktikan bagaimana pengembangan berbasis AI dapat mempercepat proses delivery tanpa kehilangan kendali atas keputusan teknis.",
-    },
-    {
-        title: "DesaConnect - Smart Village Platform",
-        techStacks: ["Next.js", "Node.js", "Express", "MongoDB"],
-        sourceUrl: "https://github.com/ekaprythara/desaconnect",
-        demoUrl: "https://desaconnect.example.com",
-        // Gambar merepresentasikan teknologi / web interface / code / saas dashboard
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-        role: "Lead Backend Developer",
-        situation:
-            "Layanan administrasi kependudukan di tingkat desa sering kali mengalami antrean panjang dan kesulitan dalam pengelolaan surat-menyurat warga secara transparan.",
-        challenges:
-            "Mengembangkan arsitektur RESTful API yang aman dan terstruktur untuk menangani pengajuan dokumen warga secara online, validasi tanda tangan digital, serta manajemen hak akses perangkat desa.",
-        outcome:
-            "Platform berhasil memproses ratusan permohonan surat pengantar secara mandiri oleh warga, meningkatkan efisiensi pelayanan administrasi kantor desa secara signifikan.",
+            "Saat ini, aplikasi sedang dalam tahap pengembangan aktif. Fitur-fitur inti seperti model database, logika controller untuk pesanan, dan antarmuka pengguna telah berhasil dibangun, yang menunjukkan progres solid menuju penyelesaian versi Minimum Viable Product (MVP).",
     },
 ];
 
